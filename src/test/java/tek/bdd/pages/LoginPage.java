@@ -3,13 +3,15 @@ package tek.bdd.pages;
 import org.openqa.selenium.By;
 
 public class LoginPage {
+   public final static By LoginButton=By.xpath("//div[1]/div/div[1]/div/a[2]");
 
-    public final static By SECTION_TITLE = By.xpath("//mat-card-title[1]/strong");
-    public final static By LOGIN_BUTTON = By.id("loginButton");
+   public final static By UserName=By.xpath("//div[1]/div/div[2]/div/div/div/div/form/div/div[1]/input");
 
-    public final static By USERNAME = By.name("username");
-    public final static By PASSWORD = By.name("password");
-    public final static By LOGGED_IN_USERNAME = By.xpath("//mat-toolbar/button[2]/span[1]");
-    public final static By ERROR_BANNER = By.cssSelector("app-banner > div.error");
+    public final static By Password=By.xpath("//div[1]/div/div[2]/div/div/div/div/form/div/div[2]/div[1]/input");
 
+    public final static By SignIn=By.xpath("//div[1]/div/div[2]/div/div/div/div/form/div/div[3]/button[1]");
+
+    public final static By CustomerService=By.xpath("//div[1]/div/div[1]/div/h2");
+
+    public final static By Error=By.xpath("//div[1]/div/div[2]/div/div/div/div/div");
 }
